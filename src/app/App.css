@@ -1,0 +1,19 @@
+body {
+  background-color: #4d5055;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-content {
+  display: flex;
+  margin: 6px 16px 0px 16px;
+}
+
+@media (max-width: 600px) {
+  .container-content {
+      flex-direction: column;
+  }
+}

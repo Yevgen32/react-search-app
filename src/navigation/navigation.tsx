@@ -15,13 +15,13 @@ const Navigation = () => {
         </a>
       </div>
       <div className="other-links">
-        <NavLink className="menu-link" to="/git">
-          Github
-        </NavLink>
+        <a className="menu-link" href="https://github.com/Yevgen32/react-search-app">
+          github
+        </a>
         <NavLink className="menu-link" to="/users">
           users
         </NavLink>
-        <NavLink className="menu-link" to="/">
+        <NavLink className="menu-link" to="/react-search-app">
           search
         </NavLink>
         <NavLink className="menu-link" to="/app">

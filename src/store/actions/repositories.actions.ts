@@ -26,7 +26,7 @@ export const getItem = (search: string) => {
                     payload: result.items
                 }));
 
-                dispatch(setMessage('nothing found for your request :crying_cat_face:'))
+                dispatch(setMessage('nothing found for your request 😞😞😞'))
             }
 
         } catch (error) {

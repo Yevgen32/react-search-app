@@ -1,4 +1,5 @@
 
-import type { ReduxState } from "../../@types/state.types"
+import type { ReduxState } from "../../@types/state/state.types"
+import type { repositoriesTypes } from '../../@types/repositories/repositories'
 
-export const repositoriesSelector = (state: ReduxState): Array<{ description: string; full_name: string; id: string; language: string }> => state.repositories;
+export const repositoriesSelector = (state: ReduxState): repositoriesTypes => state.repositories;

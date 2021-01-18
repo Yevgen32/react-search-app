@@ -1,10 +1,5 @@
-export interface Response<T> {
-    status: 'ok' | 'error';
-    code: number;
-    data: T;
-}
+export type Response<T> = T;
 
-//TODO extend from Request
 export interface Options {
     method: 'POST' | 'PUT' | 'GET' | 'DELETE';
     body?: string | number | Record<string, unknown>;

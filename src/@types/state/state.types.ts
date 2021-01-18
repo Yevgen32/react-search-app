@@ -1,5 +1,7 @@
+import type { repositoriesTypes } from '../repositories/repositories'
+
 export type ReduxState = {
-    repositories: Array<{ description: string; full_name: string; id: string; language: string }>,
+    repositories: repositoriesTypes,
     searchHistory: Array<string>,
     ui: {
         isLoading: boolean,

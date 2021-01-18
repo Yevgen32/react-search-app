@@ -33,30 +33,6 @@ export class ValidationError extends Error {
   }
 }
 
-export class PermissionError extends Error {
-  payload: Payload;
-
-  constructor(message: string, payload: Payload = {}) {
-    super(message);
-    this.name = 'PermissionError';
-    this.message = message;
-    this.payload = payload;
-    if (payload.stack) {
-      this.stack = payload.stack;
-    }
-  }
-
-  toJSON(): Record<string, unknown> {
-    return {
-      error: {
-        name: this.name,
-        message: this.message,
-        stacktrace: this.stack,
-        payload: this.payload,
-      },
-    };
-  }
-}
 
 export class ApiError extends Error {
   payload: Payload;
@@ -130,4 +106,4 @@ export class FatalError extends Error {
   }
 }
 
-export type Errors = Error | PermissionError | ApiError | ValidationError | FatalError | null;
+export type Errors = Error | ApiError | ValidationError | FatalError | null;

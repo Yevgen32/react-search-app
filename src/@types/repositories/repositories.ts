@@ -4,3 +4,5 @@ export type repositorieTypes = {
     id: string;
     language: string;
 }
+
+export type repositoriesTypes = Array<repositorieTypes>

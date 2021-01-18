@@ -1,24 +1,11 @@
 import fetch from 'isomorphic-unfetch';
 
 import type http from 'http';
-import { ApiError, ValidationError, PermissionError } from '../@types/error/error.types';
+import { ApiError, ValidationError } from '../@types/error/error.types';
 
 
 import type { Response, Options } from '../@types/api.types';
 
-export function isValid<T>(url: string, response: Response<T>): Response<T> | never {
-    if (response.code === 401) {
-        throw new PermissionError(`Access denied [${response.code}] to ${url}`);
-    }
-
-    if (response.status !== 'ok') {
-        throw new ValidationError(`${response.code} ${response.data}`, {
-            code: response.code,
-            data: response.data,
-        });
-    }
-    return response;
-}
 
 export default async function api<T>(
     url: string,

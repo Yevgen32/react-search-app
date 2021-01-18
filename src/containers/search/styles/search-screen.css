@@ -1,0 +1,32 @@
+.search-container {
+    display: flex;
+    margin-top: 14px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    margin-top: 14px;
+}
+
+.search-history-list {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (max-width: 600px) {
+    .wrapper{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .search-list {
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+    .search-item {
+        width: 100%;
+        height: auto;
+    }
+}

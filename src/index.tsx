@@ -3,9 +3,9 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
 import { store } from './store/store';
-import App from './app/App';
+import App from './containers/app/App';
 
-import './index.css';
+import './styles/index.css';
 
 render(
   <React.StrictMode>

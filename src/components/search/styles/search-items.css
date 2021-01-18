@@ -1,0 +1,9 @@
+.search-item {
+    min-height: 96px;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    background: white;
+    word-break: break-word;
+    width: calc(50% - 28px);
+}

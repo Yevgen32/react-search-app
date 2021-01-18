@@ -1,0 +1,8 @@
+.message-info {
+    background: goldenrod;
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 8px;
+    height: max-content;
+}

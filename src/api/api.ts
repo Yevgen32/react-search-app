@@ -1,10 +1,10 @@
 import fetch from 'isomorphic-unfetch';
 
 import type http from 'http';
-import { ApiError, ValidationError, PermissionError } from '../error/error.types';
+import { ApiError, ValidationError, PermissionError } from '../@types/error/error.types';
 
 
-import type { Response, Options } from './api.types';
+import type { Response, Options } from '../@types/api.types';
 
 export function isValid<T>(url: string, response: Response<T>): Response<T> | never {
     if (response.code === 401) {
